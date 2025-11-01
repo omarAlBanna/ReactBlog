@@ -1,0 +1,26 @@
+{
+  "categories": {
+    "EN": {
+      "sports": {
+        "sub-categories": ["football", "bascketball", "baseball"]
+      },
+      "news": {
+        "sub-categories": ["local", "regional", "international"]
+      },
+      "gaming": {
+        "sub-categories": ["events", "updates", "community"]
+      }
+    },
+    "AR": {
+      "رياضة": {
+        "sub-categories": ["كرة القدم", "كرة السلة", "بايسبول"]
+      },
+      "اخبار": {
+        "sub-categories": ["محلي", "اقليمي", "دولي"]
+      },
+      "العاب": {
+        "sub-categories": ["مناسبات", "تحديثات", "مجتمع"]
+      }
+    }
+  }
+}
