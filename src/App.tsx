@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import RootLayout from "./RootLayout";
+import RootLayout, { loader as navLoader } from "./pages/RootLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Categories from "./pages/Categories";
@@ -7,6 +7,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    loader: navLoader,
     children: [
       {
         index: true,
