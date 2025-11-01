@@ -3,6 +3,7 @@ import RootLayout, { loader as navLoader } from "./pages/RootLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Categories from "./pages/Categories";
+import LangContextProvider from "./store/LangContext";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
   },
 ]);
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <LangContextProvider>
+      <RouterProvider router={router} />
+    </LangContextProvider>
+  );
 };
 
 export default App;

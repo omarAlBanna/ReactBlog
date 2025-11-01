@@ -9,7 +9,13 @@ type NavBtnProps = {
 const NavButton: FC<NavBtnProps> = ({ children, to }) => {
   return (
     <li className="nav-link">
-      <NavLink to={to}>{children}</NavLink>
+      <NavLink
+        end
+        className={({ isActive }) => (isActive ? "active" : "")}
+        to={to}
+      >
+        {children}
+      </NavLink>
     </li>
   );
 };

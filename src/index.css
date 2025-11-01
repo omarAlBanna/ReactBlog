@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* NAVBAR */
+/* NAVBAR UTILITIES */
 @utility nav-link {
-  @apply px-3 py-1 text-cyan-600 text-base sm:text-lg md:text-xl rounded-lg
+  @apply px-3 py-1 text-cyan-600 text-xs sm:text-lg md:text-xl rounded-lg
    hover:bg-cyan-700 hover:text-stone-50 cursor-pointer active:bg-cyan-800;
 }
 @utility side-bar-closed {
@@ -11,6 +11,12 @@
 @utility side-bar-open {
   @apply h-screen  absolute z-50 top-0 bg-stone-50 w-36 border border-r-stone-400 shadow-stone-700 shadow-xl;
 }
+@utility active {
+  @apply font-bold pb-1 border-b-2 border-b-cyan-600;
+}
+
+/* NAVBAR MEDIA QUERIES */
+
 @media screen and (max-width: 480px) {
   .nav-link {
     font-size: 12px;
