@@ -11,9 +11,7 @@ const NavList: FC<NavBarProps> = ({ categories, lang }) => {
       <NavButton to={"/"}>
         {lang === "EN" ? "Home" : "الصفحة الرئيسية"}
       </NavButton>
-      <NavButton to={lang === "EN" ? "/about" : "/معلومات"}>
-        {lang === "EN" ? "About" : "معلومات"}
-      </NavButton>
+      <NavButton to={"/about"}>{lang === "EN" ? "About" : "معلومات"}</NavButton>
       {navCategories.map((category) => {
         return (
           <NavButton key={category} to={`/${category}`}>

@@ -45,3 +45,10 @@
     color: oklch(50.9% 0.126 221.723);
   }
 }
+
+@media screen and (max-width: 468px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+}

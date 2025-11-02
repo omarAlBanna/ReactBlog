@@ -4,28 +4,30 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Categories from "./pages/Categories";
 import LangContextProvider from "./store/LangContext";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootLayout />,
-    loader: navLoader,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: ":category",
-        element: <Categories />,
-      },
-    ],
-  },
-]);
+
 const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: `/`,
+      element: <RootLayout />,
+      loader: navLoader,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+
+        {
+          path: ":category",
+          element: <Categories />,
+        },
+      ],
+    },
+  ]);
   return (
     <LangContextProvider>
       <RouterProvider router={router} />
