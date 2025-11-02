@@ -2,24 +2,30 @@
   "categories": {
     "EN": {
       "sports": {
-        "sub-categories": ["football", "bascketball", "baseball"]
+        "sub-categories": ["football", "bascketball", "baseball"],
+        "path": "/sports"
       },
       "news": {
-        "sub-categories": ["local", "regional", "international"]
+        "sub-categories": ["local", "regional", "international"],
+        "path": "/news"
       },
       "gaming": {
-        "sub-categories": ["events", "updates", "community"]
+        "sub-categories": ["events", "updates", "community"],
+        "path": "/gaming"
       }
     },
     "AR": {
       "رياضة": {
-        "sub-categories": ["كرة القدم", "كرة السلة", "بايسبول"]
+        "sub-categories": ["كرة القدم", "كرة السلة", "بايسبول"],
+        "path": "/sports"
       },
       "اخبار": {
-        "sub-categories": ["محلي", "اقليمي", "دولي"]
+        "sub-categories": ["محلي", "اقليمي", "دولي"],
+        "path": "/news"
       },
       "العاب": {
-        "sub-categories": ["مناسبات", "تحديثات", "مجتمع"]
+        "sub-categories": ["مناسبات", "تحديثات", "مجتمع"],
+        "path": "/gaming"
       }
     }
   }

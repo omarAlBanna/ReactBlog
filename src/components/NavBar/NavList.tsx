@@ -1,20 +1,27 @@
 import NavButton from "./NavButton";
 import { type FC } from "react";
 import type { NavBarProps } from "./Navbar";
+import { useLanguageContext } from "../../store/LangContext";
 
-const NavList: FC<NavBarProps> = ({ categories, lang }) => {
-  const categoryLanguage = lang === "EN" ? categories.EN : categories.AR;
-  const navCategories = Object.keys(categoryLanguage);
+const NavList: FC<NavBarProps> = ({ categories }) => {
+  const { language } = useLanguageContext();
+  const pickedLangCategories = categories[language];
+  const navCategories = Object.keys(pickedLangCategories);
 
   return (
     <ul className={`nav-list flex items-center gap-5 justify-center `}>
       <NavButton to={"/"}>
-        {lang === "EN" ? "Home" : "الصفحة الرئيسية"}
+        {language === "EN" ? "Home" : "الصفحة الرئيسية"}
       </NavButton>
-      <NavButton to={"/about"}>{lang === "EN" ? "About" : "معلومات"}</NavButton>
+      <NavButton to={"/about"}>
+        {language === "EN" ? "About" : "معلومات"}
+      </NavButton>
       {navCategories.map((category) => {
         return (
-          <NavButton key={category} to={`/${category}`}>
+          <NavButton
+            key={category}
+            to={`${pickedLangCategories[category].path}`}
+          >
             {category}
           </NavButton>
         );
