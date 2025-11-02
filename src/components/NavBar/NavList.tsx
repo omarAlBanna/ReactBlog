@@ -8,7 +8,7 @@ const NavList: FC<NavBarProps> = ({ categories, lang }) => {
 
   return (
     <ul className={`nav-list flex items-center gap-5 justify-center `}>
-      <NavButton to={lang === "EN" ? "/home" : "/الرئيسية"}>
+      <NavButton to={"/"}>
         {lang === "EN" ? "Home" : "الصفحة الرئيسية"}
       </NavButton>
       <NavButton to={lang === "EN" ? "/about" : "/معلومات"}>

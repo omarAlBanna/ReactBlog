@@ -41,7 +41,7 @@ const Navbar: FC<NavBarProps> = ({ categories }) => {
           <button className="hamburger hidden text-2xl">&#9776;</button>
           <div className="flex items-center justify-between gap-3">
             <button
-              className="text-cyan-600 text-xs sm:text-lg md:text-xl border rounded-lg cursor-pointer border-cyan-600 px-3 py-1 hover:bg-cyan-100"
+              className="text-cyan-600 text-xs sm:text-lg md:text-xl border rounded-lg cursor-pointer border-cyan-600 px-3 py-1 hover:bg-cyan-100 active:bg-cyan-200"
               onClick={toggleLang}
             >
               {language === "EN" ? "English" : "العربية"}
