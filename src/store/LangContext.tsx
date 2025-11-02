@@ -24,7 +24,7 @@ export function useLanguageContext() {
   if (!ctx) {
     throw new Error("Failed to determine page language.");
   } else {
-    return ctx;
+    return ctx as LangContextValue;
   }
 }
 
