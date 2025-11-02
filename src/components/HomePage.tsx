@@ -1,6 +1,6 @@
 import heroImg from "../assets/HeroImg.jpg";
 import { useLanguageContext } from "../store/LangContext";
-
+import { Link } from "react-router";
 const HomePage = () => {
   const { language } = useLanguageContext();
   const textSize = language === "EN" ? "text-3xl" : "text-[42px]";
@@ -23,12 +23,18 @@ const HomePage = () => {
         </h1>
       </div>
       <div className="flex items-center justify-center mx-auto gap-2 md:gap-4">
-        <button className="text-cyan-600 cursor-pointer hover:bg-cyan-100 active:bg-cyan-200 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 border-cyan-600">
+        <Link
+          to={language === "EN" ? "/about" : "/معلومات"}
+          className="text-cyan-600 cursor-pointer hover:bg-cyan-100 active:bg-cyan-200 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 border-cyan-600"
+        >
           {language === "EN" ? "Learn more" : "معلومات اضافية"}
-        </button>
-        <button className="bg-cyan-600 cursor-pointer hover:bg-cyan-700 active:bg-cyan-800 border-2 border-cyan-600 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg  text-white">
+        </Link>
+        <Link
+          to={language === "EN" ? "/" : "/"}
+          className="bg-cyan-600 cursor-pointer hover:bg-cyan-700 active:bg-cyan-800 border-2 border-cyan-600 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg  text-white"
+        >
           {language === "EN" ? "Get started now" : "ابدأ الان"}
-        </button>
+        </Link>
       </div>
     </section>
   );

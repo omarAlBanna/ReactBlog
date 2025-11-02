@@ -35,10 +35,12 @@ const Navbar: FC<NavBarProps> = ({ categories }) => {
 
   return (
     <>
-      <header className=" bg-stone-50 py-2 sm:px-10 relative">
+      <header className=" bg-stone-50 py-2 sm:px-10 relative shadow-lg shadow-stone-300">
         <nav className="flex items-center justify-between sm:p-0.5">
           <NavList lang={language} categories={categories} />
-          <button className="hamburger hidden text-2xl">&#9776;</button>
+          <button className="hamburger hidden text-2xl text-cyan-600 px-4">
+            &#9776;
+          </button>
           <div className="flex items-center justify-between gap-3">
             <button
               className="text-cyan-600 text-xs sm:text-lg md:text-xl border rounded-lg cursor-pointer border-cyan-600 px-3 py-1 hover:bg-cyan-100 active:bg-cyan-200"
