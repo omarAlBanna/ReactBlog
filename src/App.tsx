@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Categories from "./pages/Categories";
 import LangContextProvider from "./store/LangContext";
+import { loader as categoriesLoader } from "./pages/Categories";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -24,6 +25,7 @@ const App = () => {
         {
           path: ":category",
           element: <Categories />,
+          loader: categoriesLoader,
         },
       ],
     },
