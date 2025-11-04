@@ -19,7 +19,10 @@ const AboutPage = () => {
         </h1>
       </div>
 
-      <div className="about-hero flex  gap-4 md:gap-10 items-start justify-center mb-4 md:mb-10 w-full">
+      <div
+        className="about-hero flex  gap-4 md:gap-10 items-start justify-center mb-4 md:mb-10 w-full"
+        dir={language === "AR" ? "rtl" : "ltr"}
+      >
         <p
           className={` ${languageText} text-cyan-700 w-[250px] sm:w-[300px] md:w-1/3 `}
         >
@@ -29,7 +32,7 @@ const AboutPage = () => {
         </p>
         <div className="about-img relative  w-[180px]  sm:min-w-[300px] lg:min-w-[350px] xl:min-w-[400px]  h-[100px]">
           <img
-            className="absolute object-cover"
+            className="absolute object-cover border-4 border-cyan-600"
             src={aboutImg}
             alt="a mobile phone with a blogging site on screen"
           />

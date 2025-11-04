@@ -18,10 +18,7 @@ const NavList: FC<NavBarProps> = ({ categories }) => {
       </NavButton>
       {navCategories.map((category) => {
         return (
-          <NavButton
-            key={category}
-            to={`${pickedLangCategories[category].path}`}
-          >
+          <NavButton key={category} to={`/${category}`}>
             {category}
           </NavButton>
         );
