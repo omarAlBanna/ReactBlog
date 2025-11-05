@@ -24,7 +24,7 @@ const HomePage = () => {
       </div>
       <div className="flex items-center justify-center mx-auto gap-2 md:gap-4">
         <Link
-          to={language === "EN" ? "/about" : "/معلومات"}
+          to={"/about"}
           className="text-cyan-600 cursor-pointer hover:bg-cyan-100 active:bg-cyan-200 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 border-cyan-600"
         >
           {language === "EN" ? "Learn more" : "معلومات اضافية"}
