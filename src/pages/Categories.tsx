@@ -1,49 +1,51 @@
 import NavButton from "../components/NavBar/NavButton";
 import { useLanguageContext } from "../store/LangContext";
-import { useLoaderData, useParams } from "react-router";
+import { useRouteLoaderData, useParams } from "react-router";
+import { FaArrowRightToBracket } from "react-icons/fa6";
 
 const Categories = () => {
-  const { language } = useLanguageContext();
-  const data = useLoaderData();
+  const data = useRouteLoaderData("categoryLayout");
+  const { language, loading } = useLanguageContext();
   const params = useParams();
-  const subCategories =
-    data.categories[language][params.category!]["sub-categories"];
+  const subCategories: { name: string; image: string }[] =
+    data?.categories?.[language]?.[params.category!]?.["sub-categories"];
 
   return (
     <>
-      <header>
-        <nav>
-          <ul>
-            {subCategories.map((sub: string) => {
+      <main>
+        <h1 className="text-center text-xl sm:text-4xl text-cyan-600 font-bold mt-6 ">
+          {language === "EN"
+            ? `Checkout the latest ${params.category} blogs`
+            : ` تفقد احدث المقالات حول ${params.category}`}
+        </h1>
+        {loading && <p>loading</p>}
+        <section className="mt-16">
+          <ul className="flex flex-col sm:flex-row items-center justify-center gap-8">
+            {subCategories.map((sub: { name: string; image: string }) => {
               return (
-                <NavButton key={sub} to={`/${params.category}/${sub}`}>
-                  {sub}
+                <NavButton
+                  to={`${sub.name}`}
+                  className=""
+                  key={sub.name + (Math.random() * 1000 ** 2).toFixed(0)}
+                >
+                  <div className="px-auto flex flex-col gap-4 items-center ">
+                    <img
+                      className=" w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] object-cover border-4 border-cyan-600 rounded-md hover:scale-105 duration-300"
+                      src={`/${sub.image}`}
+                    />
+                    <div className="flex  flex-row  items-center gap-3 text-lg sm:text-2xl text-cyan-600 hover:underline font-bold italic active:text-cyan-700">
+                      <p>{`${sub.name} `}</p>
+                      <FaArrowRightToBracket />
+                    </div>
+                  </div>
                 </NavButton>
               );
             })}
           </ul>
-        </nav>
-      </header>
+        </section>
+      </main>
     </>
   );
 };
 
 export default Categories;
-
-export async function loader() {
-  try {
-    const response = await fetch("http://localhost:5173/data.json");
-    if (!response.ok) {
-      throw new Error("Failed to fetch data");
-    }
-    const resData = await response.json();
-    return resData;
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    } else {
-      console.error("data fetching failed.");
-      return null;
-    }
-  }
-}
