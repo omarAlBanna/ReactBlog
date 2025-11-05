@@ -2,6 +2,7 @@ import {
   useState,
   createContext,
   useContext,
+  useEffect,
   type FC,
   type ReactNode,
 } from "react";
@@ -12,6 +13,7 @@ type ProviderProps = {
 type LangContextValue = {
   language: "EN" | "AR";
   toggleLang: () => void;
+  loading: boolean;
 };
 
 const LangContext = createContext({
@@ -30,14 +32,27 @@ export function useLanguageContext() {
 
 const LangContextProvider: FC<ProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<"EN" | "AR">("EN");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("language") as "EN" | "AR" | null;
+    if (savedLang) {
+      setLanguage(savedLang);
+    }
+    setLoading(false);
+  }, []);
+
   const toggleLang = () => {
     setLanguage((prev) => {
-      return prev === "EN" ? "AR" : "EN";
+      const newLang = prev === "EN" ? "AR" : "EN";
+      localStorage.setItem("language", newLang);
+      return newLang;
     });
   };
   const contextValue: LangContextValue = {
     language: language,
     toggleLang,
+    loading,
   };
   return (
     <LangContext.Provider value={contextValue}>{children}</LangContext.Provider>

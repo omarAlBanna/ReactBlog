@@ -2,24 +2,48 @@
   "categories": {
     "EN": {
       "sports": {
-        "sub-categories": ["football", "bascketball", "baseball"]
+        "sub-categories": [
+          { "name": "football", "image": "football.jpg" },
+          { "name": "bascketball", "image": "basketball.jpg" },
+          { "name": "baseball", "image": "baseball.jpg" }
+        ]
       },
       "news": {
-        "sub-categories": ["local", "regional", "international"]
+        "sub-categories": [
+          { "name": "local", "image": "local.jpg" },
+          { "name": "regional", "image": "regional.jpg" },
+          { "name": "international", "image": "international.jpg" }
+        ]
       },
       "gaming": {
-        "sub-categories": ["events", "updates", "community"]
+        "sub-categories": [
+          { "name": "events", "image": "events.jpg" },
+          { "name": "updates", "image": "updates.jpg" },
+          { "name": "community", "image": "community.jpg" }
+        ]
       }
     },
     "AR": {
-      "رياضة": {
-        "sub-categories": ["كرة القدم", "كرة السلة", "بايسبول"]
+      "الرياضة": {
+        "sub-categories": [
+          { "name": "كرة القدم", "image": "football.jpg" },
+          { "name": "كرة السلة", "image": "basketball.jpg" },
+          { "name": "بايسبول", "image": "baseball.jpg" }
+        ]
       },
-      "اخبار": {
-        "sub-categories": ["محلي", "اقليمي", "دولي"]
+      "الاخبار": {
+        "sub-categories": [
+          { "name": "محلي", "image": "local.jpg" },
+          { "name": "اقليمي", "image": "regional.jpg" },
+          { "name": "دولي", "image": "international.jpg" }
+        ]
       },
-      "العاب": {
-        "sub-categories": ["مناسبات", "تحديثات", "مجتمع"]
+      "الالعاب": {
+        "sub-categories": [
+          { "name": "مناسبات", "image": "events.jpg" },
+          { "name": "تحديثات", "image": "updates.jpg" },
+          { "name": "مجتمع", "image": "community.jpg" }
+        ]
       }
     }
   }

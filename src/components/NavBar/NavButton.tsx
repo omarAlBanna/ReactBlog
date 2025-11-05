@@ -4,16 +4,13 @@ import { NavLink } from "react-router";
 type NavBtnProps = {
   children: ReactNode;
   to: string;
+  className: string;
 };
 
-const NavButton: FC<NavBtnProps> = ({ children, to }) => {
+const NavButton: FC<NavBtnProps> = ({ children, to, className }) => {
   return (
-    <li className="nav-link">
-      <NavLink
-        end
-        className={({ isActive }) => (isActive ? "active" : "")}
-        to={to}
-      >
+    <li className={className}>
+      <NavLink className={({ isActive }) => (isActive ? "active" : "")} to={to}>
         {children}
       </NavLink>
     </li>

@@ -2,10 +2,12 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import RootLayout, { loader as navLoader } from "./pages/RootLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Categories from "./pages/Categories";
 import LangContextProvider from "./store/LangContext";
-import { loader as categoriesLoader } from "./pages/Categories";
-
+import SubCategories from "./pages/SubCategories";
+import Categories from "./pages/Categories";
+import CategoryLayout, {
+  loader as categoriesLoader,
+} from "./pages/CategoryLayout";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -23,9 +25,14 @@ const App = () => {
         },
 
         {
+          id: "categoryLayout",
           path: ":category",
-          element: <Categories />,
+          element: <CategoryLayout />,
           loader: categoriesLoader,
+          children: [
+            { index: true, element: <Categories /> },
+            { path: ":sub", element: <SubCategories /> },
+          ],
         },
       ],
     },

@@ -10,15 +10,15 @@ const NavList: FC<NavBarProps> = ({ categories }) => {
 
   return (
     <ul className={`nav-list flex items-center gap-5 justify-center `}>
-      <NavButton to={"/"}>
+      <NavButton className="nav-link" to={"/"}>
         {language === "EN" ? "Home" : "الصفحة الرئيسية"}
       </NavButton>
-      <NavButton to={"/about"}>
+      <NavButton className="nav-link" to={"/about"}>
         {language === "EN" ? "About" : "معلومات"}
       </NavButton>
       {navCategories.map((category) => {
         return (
-          <NavButton key={category} to={`/${category}`}>
+          <NavButton className="nav-link" key={category} to={`/${category}`}>
             {category}
           </NavButton>
         );
