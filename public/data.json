@@ -3,46 +3,268 @@
     "EN": {
       "sports": {
         "sub-categories": [
-          { "name": "football", "image": "football.jpg" },
-          { "name": "bascketball", "image": "basketball.jpg" },
-          { "name": "baseball", "image": "baseball.jpg" }
+          {
+            "name": "football",
+            "blogs": [
+              {
+                "title": "Anfield Nights: How Liverpool’s Spirit Still Shapes European Football",
+                "author": "James Petrou",
+                "date": "November 5, 2025",
+                "content": "Few stadiums in world football carry the same weight and emotion as Anfield. On European nights, the atmosphere transforms into something electric — a fusion of passion, history, and belief. For decades, Liverpool FC has used that energy to achieve the impossible, overturning deficits and stunning giants. From the miracle in Istanbul to unforgettable clashes against Barcelona and Villarreal, the Reds have made resilience their trademark. Even as tactics and players evolve, the spirit of Anfield remains timeless — reminding the football world that emotion and unity can still triumph over statistics and strategy.In an era dominated by data-driven football, Liverpool continues to prove that heart, tradition, and the roar of thousands still matter."
+              },
+              {
+                "title": "The Rebirth of Real Madrid: Youth, Legacy, and the Future of Los Blancos",
+                "author": "Andreas Kosta",
+                "date": "November 6, 2025",
+                "content": "For decades, Real Madrid has been synonymous with star power — from Zidane to Ronaldo to Ramos. But the club’s new era is built on something different: youth, patience, and long-term vision. With players like Jude Bellingham, Vinícius Jr., and Eduardo Camavinga leading the charge, Madrid is proving that rebuilding doesn’t mean sacrificing results. The blend of experience from veterans like Luka Modrić and Toni Kroos with the energy of their young stars has created one of the most balanced teams in Europe. Carlo Ancelotti’s calm leadership continues to be the glue holding it all together. His tactical adaptability has ensured that Real Madrid’s DNA — attacking flair and mental strength — remains untouched, even as a new generation takes the stage at the Bernabéu. The message is clear: the future of Los Blancos is already here, and it’s brighter than ever."
+              }
+            ],
+            "image": "football.jpg"
+          },
+          {
+            "name": "bascketball",
+            "blogs": [
+              {
+                "title": "The Rise of European Guards in the NBA: Skill Over Size",
+                "author": "Liam Papadakis",
+                "date": "October 29, 2025",
+                "content": "In recent years, the NBA has seen a surge of European guards redefining how the game is played. Gone are the days when size and athleticism were everything — today, vision, creativity, and efficiency rule the court. Players like Luka Dončić and Vasilije Micić have shown that basketball IQ and technical mastery can overcome physical mismatches. Their ability to read defenses, control tempo, and create scoring opportunities has inspired a new generation of young players across Europe and beyond. The modern NBA guard is no longer just a scorer — he’s a strategist. And as more European talent enters the league, the game continues to evolve into a truly global masterpiece of skill and intelligence."
+              },
+              {
+                "title": "How Team Chemistry Wins Championships: Lessons from the 2025 Finals",
+                "author": "Ethan Morales",
+                "date": "November 1, 2025",
+                "content": "The 2025 NBA Finals reminded fans of something timeless: talent wins games, but chemistry wins championships. While star players grab the headlines, it’s teamwork and trust that lift the trophy. The champions’ success came from selfless ball movement, defensive rotations, and a shared understanding of each player’s role. Every pass, every screen, every rotation was a product of hours of practice and mutual belief. Basketball may look like a game of individuals, but when five players move as one — reading each other’s minds and anticipating every play — that’s when the sport becomes beautiful. It’s not just about stats, it’s about connection, rhythm, and trust."
+              }
+            ],
+            "image": "basketball.jpg"
+          },
+          {
+            "name": "baseball",
+            "blogs": [
+              {
+                "title": "The Return of Small Ball: How Strategy Is Making a Comeback in Modern Baseball",
+                "author": "Daniel Rivera",
+                "date": "November 6, 2025",
+                "content": "In an era dominated by home runs and analytics, few expected the classic “small ball” approach to make a comeback. Yet in recent seasons, more teams are rediscovering the power of fundamentals — bunts, steals, and situational hitting — to win tight games. While slugging remains a fan favorite, modern managers have realized that consistent base running and contact hitting can break even the most advanced defensive shifts. The balance between power and precision is reshaping how teams approach the ninth inning. Baseball’s beauty lies in its rhythm — every pitch, every swing, and every decision matters. And as small ball rises again, it reminds us that sometimes, the smartest play isn’t the loudest one, but the one that wins."
+              }
+            ],
+            "image": "baseball.jpg"
+          }
         ]
       },
       "news": {
         "sub-categories": [
-          { "name": "local", "image": "local.jpg" },
-          { "name": "regional", "image": "regional.jpg" },
-          { "name": "international", "image": "international.jpg" }
+          {
+            "name": "local",
+            "blogs": [
+              {
+                "title": "Athens Launches New Green Initiative to Reduce Urban Heat",
+                "author": "Eleni Markou",
+                "date": "November 6, 2025",
+                "content": "The Municipality of Athens has announced a new environmental initiative aimed at combating the city’s growing urban heat problem. The project, titled “Green Roofs of Athens,” will introduce rooftop gardens and shaded corridors across key districts, including Exarchia, Neos Kosmos, and Kallithea. According to city officials, the program seeks to lower surface temperatures by up to 3°C in the most densely populated areas. Over 200 buildings are expected to participate in the first phase, which begins in early 2026. “Athens is one of the hottest capitals in Europe during summer,” said Mayor Kostas Bakoyannis. “We want to make the city more livable, sustainable, and beautiful for its residents.” The initiative is part of a broader EU-funded program focused on climate resilience in southern European cities, combining local design, renewable materials, and community participation. Residents have already expressed optimism, seeing this as a small but meaningful step toward a greener and cooler Athens."
+              }
+            ],
+            "image": "local.jpg"
+          },
+          {
+            "name": "regional",
+            "image": "regional.jpg",
+            "blogs": [
+              {
+                "title": "EU Approves New Digital Green Certificate Standard for Cross-Border Travel",
+                "author": "Sofia Lindberg",
+                "date": "November 6, 2025",
+                "content": "The European Union has announced the approval of a new standard for digital green certificates to simplify cross-border travel within member states. The initiative aims to streamline verification of vaccination, testing, and recovery status while ensuring privacy and security across all EU countries. The system will integrate with national health databases and mobile applications, making it easier for travelers to access borders without lengthy checks. Officials say the standardization is expected to reduce delays at airports, train stations, and road checkpoints. EU Commissioner for Health emphasized that the initiative is part of a broader strategy to promote safe mobility and economic recovery in the region. Member states are encouraged to adopt the standard by mid-2026. Industry representatives have welcomed the measure, noting that smoother travel procedures could boost tourism and business travel across the EU."
+              }
+            ]
+          },
+          {
+            "name": "international",
+            "image": "international.jpg",
+            "blogs": [
+              {
+                "title": "Global Leaders Agree on Climate Finance Package at UN Summit",
+                "author": "Isabella Moretti",
+                "date": "November 6, 2025",
+                "content": "World leaders have reached an agreement on a comprehensive climate finance package during the latest United Nations summit. The plan is designed to provide developing countries with the resources needed to combat climate change, including investments in renewable energy, sustainable agriculture, and climate-resilient infrastructure. Officials stated that the agreement represents one of the most ambitious collective commitments in recent history and sets a framework for international cooperation in environmental protection. The finance package includes funding from both public and private sectors, with transparency and accountability measures to ensure that resources reach the communities that need them most. Experts believe that successful implementation could accelerate global progress toward net zero emissions and help vulnerable nations adapt to the effects of climate change."
+              }
+            ]
+          }
         ]
       },
       "gaming": {
         "sub-categories": [
-          { "name": "events", "image": "events.jpg" },
-          { "name": "updates", "image": "updates.jpg" },
-          { "name": "community", "image": "community.jpg" }
+          {
+            "name": "events",
+            "image": "events.jpg",
+            "blogs": [
+              {
+                "title": "Global Gaming Expo 2025 Showcases the Future of Interactive Entertainment",
+                "author": "Alexei Dimitrov",
+                "date": "November 6, 2025",
+                "content": "The Global Gaming Expo 2025, held in Berlin, attracted thousands of gamers, developers, and industry professionals from around the world. The event featured hands-on demos of upcoming titles, virtual reality experiences, and panels with leading game designers. Highlights included the first public demo of the highly anticipated fantasy RPG Horizon Realms, as well as a showcase of cutting-edge VR hardware and immersive gaming accessories. Organizers emphasized that the expo is not only about showcasing games but also about fostering collaboration and innovation in the gaming industry. Esports tournaments ran alongside the main event, drawing competitive players and fans from across Europe. Attendees expressed excitement about the variety of experiences available, noting that the expo demonstrates how gaming continues to evolve as both entertainment and a creative industry."
+              }
+            ]
+          },
+          {
+            "name": "updates",
+            "image": "updates.jpg",
+            "blogs": [
+              {
+                "title": "Weekly Gaming Updates",
+                "author": "Jordan Lee",
+                "date": "November 6, 2025",
+                "content": "This week in gaming brought exciting updates across multiple platforms. The highly anticipated patch for BattleForge introduces new maps, weapon balancing, and quality-of-life improvements. Players have praised the faster matchmaking system and the refined ranking algorithm. In addition, Fantasy Quest Online released its seasonal event featuring new quests, limited-time cosmetic items, and community challenges. Developers have emphasized player feedback in designing these additions to enhance engagement and replayability. Console fans saw major updates for PlayStation and Xbox platforms, including system stability improvements and cross-platform multiplayer enhancements. Several indie titles also received updates addressing bugs and performance optimizations. Overall, the week highlights how developers are actively listening to their communities and continuously refining their games to meet player expectations."
+              }
+            ]
+          },
+          {
+            "name": "community",
+            "image": "community.jpg",
+            "blogs": [
+              {
+                "title": "Gaming Community Grows Around Player-Created Content",
+                "author": "Riley Carter",
+                "date": "November 6, 2025",
+                "content": "The gaming community continues to expand as more players create their own content, including mods, fan art, and custom game modes. Platforms like Steam Workshop and Roblox provide tools that make it easy for players to share their creations with a global audience. Community-run tournaments and events have also grown in popularity, offering opportunities for collaboration and competition. Developers increasingly recognize the value of player-generated content, often incorporating popular mods and ideas into official releases. The trend demonstrates how gaming is not just about playing but also about creativity, social interaction, and building shared experiences."
+              }
+            ]
+          }
         ]
       }
     },
     "AR": {
       "الرياضة": {
         "sub-categories": [
-          { "name": "كرة القدم", "image": "football.jpg" },
-          { "name": "كرة السلة", "image": "basketball.jpg" },
-          { "name": "بايسبول", "image": "baseball.jpg" }
+          {
+            "name": "كرة القدم",
+            "image": "football.jpg",
+            "blogs": [
+              {
+                "title": "ليالي آنفيلد: كيف ما زالت روح ليفربول تُشكّل كرة القدم الأوروبية",
+                "author": "جيمس بترو",
+                "date": "٥ نوفمبر ٢٠٢٥",
+                "content": "قلّة من الملاعب في عالم كرة القدم تحمل نفس الشحنة العاطفية والهيبة التي يتميّز بها آنفيلد. ففي الليالي الأوروبية، يتحوّل المكان إلى طاقة هادرة — مزيج من الشغف، التاريخ، والإيمان. وعلى مدى عقود، استخدم ليفربول تلك الطاقة لتحقيق المستحيل، من قلب النتائج وإسقاط عمالقة القارة. من معجزة إسطنبول إلى المواجهات الخالدة ضد برشلونة وفياريال، جعل الريدز من الصمود علامته الفارقة. وحتى مع تغيّر التكتيكات والأجيال، تبقى روح آنفيلد خالدة — تذكيراً للعالم بأن العاطفة والوحدة قادرتان على التفوّق على الإحصاءات والاستراتيجيات.في زمنٍ تهيمن فيه كرة القدم القائمة على البيانات والتحليل، يواصل ليفربول إثبات أن القلب، والتقاليد، وصوت الآلاف في المدرجات لا يزال لها مكان في اللعبة."
+              },
+              {
+                "title": "بعث ريال مدريد من جديد: الشباب، الإرث، ومستقبل الميرينغي",
+                "author": "أندرياس كوستا",
+                "date": "٦ نوفمبر ٢٠٢٥",
+                "content": "على مدى عقود، ارتبط اسم ريال مدريد بالنجوم اللامعين — من زيدان إلى رونالدو إلى راموس. لكنّ عهد النادي الجديد يقوم على أسس مختلفة: الشباب، الصبر، والرؤية بعيدة المدى. فبوجود لاعبين مثل جود بيلينغهام، فينيسيوس جونيور، وإدواردو كامافينغا في الخطوط الأمامية، يثبت ريال مدريد أنّ إعادة البناء لا تعني التنازل عن النتائج. المزيج بين خبرة المخضرمين مثل لوكا مودريتش وتوني كروس، وحماس الجيل الجديد، أوجد أحد أكثر الفرق توازناً في أوروبا. يظلّ الهدوء الذي يتّسم به كارلو أنشيلوتي هو الرابط الذي يوحّد هذا الفريق. لقد ضمن بأسلوبه المرن أن تبقى هوية ريال مدريد — الهجوم الجريء والقوة الذهنية — حاضرة رغم التغيّرات. الرسالة واضحة: مستقبل الميرينغي قد بدأ بالفعل، وهو مشرق أكثر من أيّ وقت مضى"
+              }
+            ]
+          },
+          {
+            "name": "كرة السلة",
+            "image": "basketball.jpg",
+            "blogs": [
+              {
+                "title": "صعود الحراس الأوروبيين: المهارة تتفوّق على الحجم",
+                "author": "ليام باباداكيس",
+                "date": "٢٩ أكتوبر ٢٠٢٥",
+                "content": "في السنوات الأخيرة، شهدت الـموجة من الحراس الأوروبيين الذين أعادوا تعريف أسلوب اللعب في كرة السلة الحديثة. ولّت الأيام التي كان فيها الحجم والقوة البدنية كل شيء — فالذكاء، والإبداع، والدقة أصبحت اليوم هي التي تحكم أرض الملعب. اللاعبون مثل لوكا دونتشيتش وفاسيليي ميتشيتش أثبتوا أن الوعي التكتيكي والسيطرة التقنية يمكنهما تعويض أي فارق بدني. قدرتهم على قراءة الدفاعات والتحكم بإيقاع المباراة وصناعة الفرص ألهمت جيلاً جديداً من اللاعبين في أوروبا وخارجها. الحارس العصري  لم يعد مجرّد هدّاف، بل أصبح استراتيجياً حقيقياً. ومع تزايد تدفق المواهب الأوروبية إلى الدوري، تتحوّل اللعبة أكثر فأكثر إلى تحفة عالمية تجمع بين المهارة والذكاء."
+              },
+              {
+                "title": "كيف تصنع الكيمياء الجماعية الأبطال: دروس من نهائيات ٢٠٢٥",
+                "author": "إيثان موراليس",
+                "date": "١ نوفمبر ٢٠٢٥",
+                "content": "ذكّرتنا نهائيات  لعام ٢٠٢٥ بحقيقة خالدة: الموهبة تكسب المباريات، لكن الانسجام الجماعي هو من يحقق البطولات. فرغم أن النجوم هم من يتصدّرون العناوين، إلا أن الثقة والتعاون بين اللاعبين هي التي ترفع الكأس في النهاية. جاء نجاح الأبطال من تمريرات غير أنانية، ودفاع متناسق، وفهم عميق لأدوار كل لاعب في المنظومة. كل تمريرة، وكل حاجز، وكل حركة دفاعية كانت نتيجة ساعات طويلة من التدريب والثقة المتبادلة. كرة السلة قد تبدو لعبة أفراد، لكنها في جوهرها لعبة جماعة. فعندما يتحرك خمسة لاعبين كأنهم عقل واحد — يقرأون بعضهم البعض ويتوقعون كل حركة — تتحوّل اللعبة إلى لوحة فنية جميلة. ليست الأرقام هي ما يصنع المجد، بل الإيقاع، والانسجام، والثقة."
+              }
+            ]
+          },
+          {
+            "name": "بايسبول",
+            "image": "baseball.jpg",
+            "blogs": [
+              {
+                "title": "عودة أسلوب اللعب البسيط: كيف تعود الاستراتيجية إلى صدارة لعبة البيسبول الحديثة",
+                "author": "دانيال ريفيرا",
+                "date": "٦ نوفمبر ٢٠٢٥",
+                "content": "في زمنٍ تهيمن عليه الضربات القوية والتحليلات الإحصائية، لم يكن أحد يتوقع عودة أسلوب'اللعب البسيط' الكلاسيكي إلى الواجهة. ومع ذلك، بدأت فرق عديدة في المواسم الأخيرة تعيد اكتشاف قوة الأساسيات — مثل الضربات القصيرة، والسرقات الذكية، والضرب في اللحظات الحاسمة — للفوز في المباريات المتقاربة. ورغم أن الضربات الطويلة ما زالت تُمتع الجماهير، أدرك المدرّبون المعاصرون أن الجري الذكي على القواعد والضرب الدقيق يمكن أن يتغلبا حتى على أكثر الدفاعات تطوراً. هذا التوازن بين القوة والدقة يعيد تشكيل طريقة تفكير الفرق في الأدوار الأخيرة من المباراة. تكمن جمالية البيسبول في إيقاعها — فكل رمية، وكل ضربة، وكل قرار له وزنه الخاص. ومع عودة أسلوب اللعب البسيط، نتذكر أن الذكاء في الملعب لا يقاس بالصوت الأعلى، بل باللعب الذي يجلب النصر في النهاية"
+              }
+            ]
+          }
         ]
       },
       "الاخبار": {
         "sub-categories": [
-          { "name": "محلي", "image": "local.jpg" },
-          { "name": "اقليمي", "image": "regional.jpg" },
-          { "name": "دولي", "image": "international.jpg" }
+          {
+            "name": "محلي",
+            "image": "local.jpg",
+            "blogs": [
+              {
+                "title": "أثينا تطلق مبادرة خضراء جديدة للتخفيف من حرارة المدينة",
+                "author": "إليني ماركو",
+                "date": "٦ نوفمبر ٢٠٢٥",
+                "content": "أعلنت بلدية أثينا عن مبادرة بيئية جديدة تهدف إلى مواجهة مشكلة ارتفاع درجات الحرارة في المدينة. يحمل المشروع عنوان أسطح خضراء في أثينا وسيقوم بإدخال حدائق على أسطح المباني وممرات مظللة في أحياء رئيسية بما في ذلك إكسارخيا، نيوس كوسموس، وكاليتيا. وفقاً لمسؤولي المدينة يسعى البرنامج إلى خفض درجات الحرارة السطحية بمقدار يصل إلى ٣ درجات مئوية في أكثر المناطق كثافة سكانية. ومن المتوقع أن يشارك أكثر من ٢٠٠ مبنى في المرحلة الأولى والتي ستبدأ في أوائل عام ٢٠٢٦. وقد أعرب السكان عن تفاؤلهم معتبرين أن هذه خطوة صغيرة لكنها مهمة نحو أثينا أكثر خضرة وبرودة."
+              }
+            ]
+          },
+          {
+            "name": "اقليمي",
+            "image": "regional.jpg",
+            "blogs": [
+              {
+                "title": "الاتحاد الأوروبي يوافق على معيار جديد للشهادات الخضراء الرقمية للسفر",
+                "author": "صوفيا ليندبرغ",
+                "data": "٦ نوفمبر ٢٠٢٥",
+                "content": "أعلن الاتحاد الأوروبي عن الموافقة على معيار جديد للشهادات الخضراء الرقمية لتسهيل السفر بين الدول الأعضاء. تهدف المبادرة إلى تبسيط التحقق من حالة التطعيم والاختبار والتعافي مع ضمان الخصوصية والأمان في جميع دول الاتحاد الأوروبي. سيتم دمج النظام مع قواعد البيانات الصحية الوطنية والتطبيقات المحمولة لتسهيل وصول المسافرين إلى الحدود دون تأخيرات طويلة. وأوضح المسؤولون أن التوحيد القياسي من المتوقع أن يقلل من التأخيرات في المطارات ومحطات القطارات ونقاط التفتيش على الطرق. أكد مفوض الصحة في الاتحاد الأوروبي أن المبادرة تأتي ضمن استراتيجية أوسع لتعزيز التنقل الآمن ودعم التعافي الاقتصادي في المنطقة. يُشجع الدول الأعضاء على اعتماد المعيار بحلول منتصف عام ٢٠٢٦. رحب ممثلون عن القطاع الصناعي بهذه الخطوة، مؤكدين أن إجراءات السفر الأكثر سلاسة يمكن أن تعزز السياحة والسفر التجاري في جميع أنحاء الاتحاد الأوروبي"
+              }
+            ]
+          },
+          {
+            "name": "دولي",
+            "image": "international.jpg",
+            "blogs": [
+              {
+                "title": "توصل القادة العالميون إلى اتفاق على حزمة تمويل المناخ في قمة الأمم المتحدة",
+                "author": "إيزابيلا موريتّي",
+                "data": "٦ نوفمبر ٢٠٢٥",
+                "content": "توصل القادة العالميون إلى اتفاق بشأن حزمة تمويل شاملة للمناخ خلال قمة الأمم المتحدة الأخيرة. تم تصميم الخطة لتوفير الموارد اللازمة للدول النامية لمكافحة تغير المناخ، بما في ذلك الاستثمارات في الطاقة المتجددة والزراعة المستدامة والبنية التحتية المقاومة للمناخ. أوضح المسؤولون أن الاتفاق يمثل أحد أكثر الالتزامات الجماعية طموحاً في التاريخ الحديث ويضع إطاراً للتعاون الدولي في حماية البيئة. تشمل حزمة التمويل تمويلاً من القطاعين العام والخاص مع تدابير للشفافية والمساءلة لضمان وصول الموارد إلى المجتمعات التي تحتاجها أكثر. يعتقد الخبراء أن التنفيذ الناجح يمكن أن يسرع التقدم العالمي نحو صافي الانبعاثات الصفرية ويساعد الدول الضعيفة على التكيف مع آثار تغير المناخ."
+              }
+            ]
+          }
         ]
       },
       "الالعاب": {
         "sub-categories": [
-          { "name": "مناسبات", "image": "events.jpg" },
-          { "name": "تحديثات", "image": "updates.jpg" },
-          { "name": "مجتمع", "image": "community.jpg" }
+          {
+            "name": "مناسبات",
+            "image": "events.jpg",
+            "blogs": [
+              {
+                "title": "معرض الألعاب العالمي ٢٠٢٥ يعرض مستقبل الترفيه التفاعلي",
+                "author": "أليكسي ديميتروف",
+                "date": "١ نوفمبر ٢٠٢٥",
+                "content": "استقطب معرض الألعاب العالمي ٢٠٢٥، الذي أقيم في برلين، آلاف اللاعبين والمطورين والمحترفين في صناعة الألعاب من جميع أنحاء العالم. تضمن الحدث عروضاً عملية للألعاب القادمة وتجارب الواقع الافتراضي وجلسات نقاش مع كبار مصممي الألعاب. تضمن أبرز الفعاليات العرض الأول للجمهور للعبة تقمص الأدوار الخيالية المنتظرة Horizon Realms، بالإضافة إلى عرض لأحدث أجهزة الواقع الافتراضي والملحقات التفاعلية للألعاب. شدد المنظمون على أن المعرض ليس مجرد عرض للألعاب، بل يهدف أيضاً إلى تعزيز التعاون والابتكار في صناعة الألعاب. أقيمت بطولات الرياضات الإلكترونية إلى جانب الحدث الرئيسي، وجذبت لاعبين ومشجعين تنافسيين من جميع أنحاء أوروبا. أعرب الحضور عن حماسهم لتنوع التجارب المتاحة، مشيرين إلى أن المعرض يوضح كيف تستمر الألعاب في التطور كوسيلة للترفيه وصناعة إبداعية في الوقت نفسه."
+              }
+            ]
+          },
+          {
+            "name": "تحديثات",
+            "image": "updates.jpg",
+            "blogs": [
+              {
+                "title": "تحديثات الألعاب الأسبوعية",
+                "author": "جوردان لي",
+                "date": "٦ نوفمبر ٢٠٢٥",
+                "content": "شهد هذا الأسبوع في عالم الألعاب تحديثات مثيرة عبر منصات متعددة. أضاف التصحيح المنتظر للعبة BattleForge خرائط جديدة وتوازن للأسلحة وتحسينات في جودة التجربة. أشاد اللاعبون بنظام مطابقة أسرع وتحسين خوارزمية التصنيف. بالإضافة إلى ذلك، أطلقت لعبة Fantasy Quest Online حدث الموسم الجديد الذي يتضمن مهاماً جديدة وعناصر تجميل محدودة الوقت وتحديات مجتمعية. شدد المطورون على أخذ ملاحظات اللاعبين بعين الاعتبار عند تصميم هذه الإضافات لتعزيز التفاعل وإعادة اللعب. كما حصل مستخدمو أجهزة PlayStation وXbox على تحديثات مهمة تشمل تحسين استقرار النظام وتعزيز اللعب الجماعي عبر المنصات. تلقت عدة ألعاب مستقلة أيضاً تحديثات لمعالجة الأخطاء وتحسين الأداء. بشكل عام، يبرز الأسبوع كيف يستمع المطورون إلى مجتمعات اللاعبين باستمرار ويقومون بتحسين ألعابهم لتلبية توقعات اللاعبين."
+              }
+            ]
+          },
+          {
+            "name": "مجتمع",
+            "image": "community.jpg",
+            "blogs": [
+              {
+                "title": "نمو مجتمع الألعاب حول محتوى من صنع اللاعبين",
+                "author": "رايلي كارتر",
+                "date": "٦ نوفمبر ٢٠٢٥",
+                "content": "يواصل مجتمع الألعاب التوسع مع قيام المزيد من اللاعبين بإنشاء محتواهم الخاص، بما في ذلك التعديلات والأعمال الفنية من المعجبين وأنماط اللعب المخصصة. توفر منصات مثل Steam Workshop وRoblox أدوات تسهل على اللاعبين مشاركة إبداعاتهم مع جمهور عالمي. كما ازدادت شعبية البطولات والفعاليات التي يديرها المجتمع، مما يوفر فرصاً للتعاون والمنافسة. بدأ المطورون يدركون بشكل متزايد قيمة المحتوى الذي ينشئه اللاعبون، وغالباً ما يتم دمج التعديلات والأفكار الشعبية في الإصدارات الرسمية. يوضح هذا الاتجاه أن الألعاب ليست مجرد لعب فقط، بل هي أيضاً إبداع وتفاعل اجتماعي وبناء تجارب مشتركة."
+              }
+            ]
+          }
         ]
       }
     }
