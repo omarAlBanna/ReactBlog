@@ -25,14 +25,14 @@ const Navbar: FC<NavBarProps> = ({ categories }) => {
           </button>
           <div className="flex items-center justify-between gap-3">
             <button
-              className="text-cyan-600 text-xs sm:text-lg md:text-xl border rounded-lg cursor-pointer border-cyan-600 px-3 py-1 hover:bg-cyan-100 active:bg-cyan-200"
+              className="text-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg border rounded-lg cursor-pointer border-cyan-600 px-1 sm:px-3 py-0.5 sm:py-1 hover:bg-cyan-100 active:bg-cyan-200"
               onClick={toggleLang}
             >
               <Link to={"/home"}>
                 {language === "EN" ? "English" : "العربية"}
               </Link>
             </button>
-            <button className="login-btn bg-cyan-600 text-xs sm:text-lg md:text-xl text-stone-50 rounded-lg hover:bg-cyan-700 active:bg-cyan-800 px-3 py-1 cursor-pointer">
+            <button className="login-btn bg-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg text-stone-50 rounded-lg hover:bg-cyan-700 active:bg-cyan-800 px-3 py-1 cursor-pointer">
               {language === "EN" ? "Log In" : "تسجيل دخول"}
             </button>
           </div>

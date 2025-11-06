@@ -18,7 +18,7 @@ const CategoryLayout = () => {
               return (
                 <NavButton
                   key={sub.name}
-                  className="text-base sm:text-lg text-cyan-800 sm:px-4 hover:text-cyan-800 hover:font-bold"
+                  className="text-[10px] sm:text-base md:text-sm lg:text-base xl:text-lg text-cyan-800 sm:px-4 hover:text-cyan-800 hover:font-bold"
                   to={`/${params.category}/${sub.name}`}
                 >
                   {sub.name}
