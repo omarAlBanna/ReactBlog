@@ -32,9 +32,13 @@ const Navbar: FC<NavBarProps> = ({ categories }) => {
                 {language === "EN" ? "English" : "العربية"}
               </Link>
             </button>
-            <button className="login-btn bg-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg text-stone-50 rounded-lg hover:bg-cyan-700 active:bg-cyan-800 px-3 py-1 cursor-pointer">
-              {language === "EN" ? "Log In" : "تسجيل دخول"}
-            </button>
+
+            <Link
+              to={"/login"}
+              className="login-btn bg-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg text-stone-50 rounded-lg hover:bg-cyan-700 active:bg-cyan-800 px-3 py-1 cursor-pointer"
+            >
+              {language === "EN" ? "Login" : "دخول"}
+            </Link>
           </div>
         </nav>
       </header>

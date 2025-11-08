@@ -42,7 +42,7 @@ const AboutPage = () => {
       <div className="md:mt-10">
         <Link
           className=" italic  flex gap-2 items-center min-h-[50px]  font-bold text-xl sm:text-2xl text-cyan-600 hover:underline active:text-cyan-700  "
-          to={"/"}
+          to={"/signup"}
         >
           {language === "EN" ? "Get started" : "ابدأ الان"}
           <FaArrowRightToBracket />

@@ -24,7 +24,7 @@ const Categories = () => {
             {subCategories.map((sub: { name: string; image: string }) => {
               return (
                 <NavButton
-                  to={`${sub.name}`}
+                  to={`/${params.category}/${sub.name}`}
                   className=""
                   key={sub.name + (Math.random() * 1000 ** 2).toFixed(0)}
                 >
