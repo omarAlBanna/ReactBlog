@@ -30,7 +30,7 @@ const HomePage = () => {
           {language === "EN" ? "Learn more" : "معلومات اضافية"}
         </Link>
         <Link
-          to={language === "EN" ? "/" : "/"}
+          to={"/signup"}
           className="bg-cyan-600 cursor-pointer hover:bg-cyan-700 active:bg-cyan-800 border-2 border-cyan-600 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg  text-white"
         >
           {language === "EN" ? "Get started now" : "ابدأ الان"}

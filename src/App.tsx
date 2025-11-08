@@ -8,6 +8,10 @@ import Categories from "./pages/Categories";
 import CategoryLayout, {
   loader as categoriesLoader,
 } from "./pages/CategoryLayout";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import { action } from "./components/Form";
+import LoggedInCtxProvider from "./store/LoggedInContext";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -27,6 +31,12 @@ const App = () => {
           path: "/about",
           element: <About />,
         },
+        {
+          path: "/login",
+          element: <Login />,
+          action: action,
+        },
+        { path: "/signup", element: <SignUp />, action: action },
 
         {
           id: "categoryLayout",
@@ -43,7 +53,9 @@ const App = () => {
   ]);
   return (
     <LangContextProvider>
-      <RouterProvider router={router} />
+      <LoggedInCtxProvider>
+        <RouterProvider router={router} />
+      </LoggedInCtxProvider>
     </LangContextProvider>
   );
 };
