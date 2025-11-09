@@ -10,17 +10,24 @@ type Categories = {
 };
 export type NavBarProps = {
   categories: Categories;
+  mode: "nav-bar" | "side-bar";
+  sideBarStatus?: string;
+  open?: () => void;
+  close?: () => void;
 };
 
-const Navbar: FC<NavBarProps> = ({ categories }) => {
+const Navbar: FC<NavBarProps> = ({ categories, open }) => {
   const { language, toggleLang } = useLanguageContext();
   const { loggedIn, LogOut } = useLoginContext();
   return (
     <>
       <header className=" bg-stone-50 py-2 sm:px-10 relative shadow-lg shadow-stone-300">
         <nav className="flex items-center justify-between sm:p-0.5">
-          <NavList categories={categories} />
-          <button className="hamburger hidden text-2xl text-cyan-600 px-4">
+          <NavList mode="nav-bar" categories={categories} />
+          <button
+            onClick={open}
+            className="hamburger hidden text-2xl text-cyan-600 px-4"
+          >
             &#9776;
           </button>
           <div className="flex items-center justify-between gap-3">
