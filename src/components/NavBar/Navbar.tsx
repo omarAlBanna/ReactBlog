@@ -2,7 +2,7 @@ import { type FC } from "react";
 import { useLanguageContext } from "../../store/LangContext";
 import NavList from "./NavList";
 import { Link } from "react-router";
-
+import { useLoginContext } from "../../store/LoggedInContext";
 type LanguageCategories = Record<string, { "sub-categories": string[] }>;
 type Categories = {
   EN: LanguageCategories;
@@ -14,7 +14,7 @@ export type NavBarProps = {
 
 const Navbar: FC<NavBarProps> = ({ categories }) => {
   const { language, toggleLang } = useLanguageContext();
-
+  const { loggedIn, LogOut } = useLoginContext();
   return (
     <>
       <header className=" bg-stone-50 py-2 sm:px-10 relative shadow-lg shadow-stone-300">
@@ -33,12 +33,21 @@ const Navbar: FC<NavBarProps> = ({ categories }) => {
               </Link>
             </button>
 
-            <Link
-              to={"/login"}
-              className="login-btn bg-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg text-stone-50 rounded-lg hover:bg-cyan-700 active:bg-cyan-800 px-3 py-1 cursor-pointer"
-            >
-              {language === "EN" ? "Login" : "دخول"}
-            </Link>
+            {loggedIn ? (
+              <button
+                onClick={LogOut}
+                className="login-btn bg-cyan-600 text-stone-50 rounded-lg hover:bg-cyan-700 px-3 py-1"
+              >
+                {language === "EN" ? "Logout" : "خروج"}
+              </button>
+            ) : (
+              <Link
+                to="/login"
+                className="login-btn bg-cyan-600 text-stone-50 rounded-lg hover:bg-cyan-700 px-3 py-1"
+              >
+                {language === "EN" ? "Login" : "دخول"}
+              </Link>
+            )}
           </div>
         </nav>
       </header>

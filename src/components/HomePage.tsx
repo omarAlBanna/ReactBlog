@@ -3,6 +3,7 @@ import { useLanguageContext } from "../store/LangContext";
 import { Link } from "react-router";
 const HomePage = () => {
   const { language } = useLanguageContext();
+
   const textSize = language === "EN" ? "text-3xl" : "text-[42px]";
   return (
     <section className="w-full h-full flex flex-col items-center justify-center ">
