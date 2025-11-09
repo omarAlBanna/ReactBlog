@@ -13,6 +13,7 @@ import SignUp from "./pages/SignUp";
 import { action } from "./components/Form";
 import LoggedInCtxProvider from "./store/LoggedInContext";
 import Error from "./pages/Error";
+
 const App = () => {
   const router = createBrowserRouter([
     {
