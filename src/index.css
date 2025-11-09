@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
+body,
+html {
+  height: 100%;
+}
+
 /* NAVBAR UTILITIES */
 @utility nav-link {
-  @apply px-1 sm:px-3 py-0.5 sm:py-1 text-cyan-600 text-[10px] sm:text-xs md:text-base  lg:text-lg rounded-lg
+  @apply text-cyan-600 
   hover:bg-cyan-700 hover:text-stone-50 cursor-pointer active:bg-cyan-800;
+}
+@utility nav-bar-link {
+  @apply text-[10px] px-1   sm:px-3 py-0.5 sm:py-1 sm:text-xs md:text-base  lg:text-xl rounded-lg;
 }
 @utility active {
   @apply font-bold pb-1 border-b-2 border-b-cyan-600;
@@ -32,6 +40,19 @@
   .about-hero {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* SideBar Utilities */
+
+@utility side-bar-link {
+  @apply w-4/5 hover:shadow-lg hover:shadow-stone-500 p-4 font-bold;
+}
+
+/* SideBar media Queries */
+@media screen and (min-width: 480px) {
+  .side-bar {
+    display: none;
   }
 }
 

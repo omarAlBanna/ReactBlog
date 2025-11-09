@@ -3,22 +3,48 @@ import { type FC } from "react";
 import type { NavBarProps } from "./Navbar";
 import { useLanguageContext } from "../../store/LangContext";
 
-const NavList: FC<NavBarProps> = ({ categories }) => {
+const NavList: FC<NavBarProps> = ({ categories, mode }) => {
   const { language } = useLanguageContext();
   const pickedLangCategories = categories[language];
   const navCategories = Object.keys(pickedLangCategories);
 
   return (
-    <ul className={`nav-list flex items-center gap-2 sm:gap-5 justify-center `}>
-      <NavButton className="nav-link" to={"/"}>
+    <ul
+      className={` flex ${
+        mode === "nav-bar"
+          ? "flex-row justify-center gap-2 sm:gap-5 nav-list "
+          : "flex-col gap-4  h-full"
+      }
+      } items-center  `}
+    >
+      <NavButton
+        mode={mode}
+        className={`nav-link  ${
+          mode === "nav-bar" ? "nav-bar-link" : "side-bar-link"
+        }`}
+        to={"/"}
+      >
         {language === "EN" ? "Home" : "الصفحة الرئيسية"}
       </NavButton>
-      <NavButton className="nav-link" to={"/about"}>
+      <NavButton
+        mode={mode}
+        className={`nav-link  ${
+          mode === "nav-bar" ? "nav-bar-link" : "side-bar-link"
+        }`}
+        to={"/about"}
+      >
         {language === "EN" ? "About" : "معلومات"}
       </NavButton>
       {navCategories.map((category) => {
         return (
-          <NavButton className="nav-link" key={category} to={`/${category}`}>
+          <NavButton
+            mode={mode}
+            className={`nav-link  ${
+              mode === "nav-bar" ? "nav-bar-link" : "side-bar-link"
+            }`}
+            key={category}
+            to={`/${category}`}
+          >
             {category}
           </NavButton>
         );

@@ -17,6 +17,7 @@ const CategoryLayout = () => {
             {subCategories.map((sub: { name: string; image: string }) => {
               return (
                 <NavButton
+                  mode={"nav-bar"}
                   key={sub.name}
                   className="text-[10px] sm:text-base md:text-sm lg:text-base xl:text-lg text-cyan-800 sm:px-4 hover:text-cyan-800 hover:font-bold"
                   to={`/${params.category}/${sub.name}`}

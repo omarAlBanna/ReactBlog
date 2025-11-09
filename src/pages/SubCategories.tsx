@@ -21,7 +21,7 @@ const SubCategories = () => {
   return (
     <div className="my-20 flex lg:flex-row flex-col w-4/5 gap-5 sm:gap-10 mx-auto">
       {currSub[0].blogs.map((blog: Blog) => {
-        return <BlogPost blog={blog} />;
+        return <BlogPost key={blog.title} blog={blog} />;
       })}
     </div>
   );

@@ -5,12 +5,18 @@ type NavBtnProps = {
   children: ReactNode;
   to: string;
   className: string;
+  mode: "side-bar" | "nav-bar";
 };
 
-const NavButton: FC<NavBtnProps> = ({ children, to, className }) => {
+const NavButton: FC<NavBtnProps> = ({ children, to, className, mode }) => {
   return (
     <li className={className}>
-      <NavLink className={({ isActive }) => (isActive ? "active" : "")} to={to}>
+      <NavLink
+        className={({ isActive }) =>
+          isActive && mode === "nav-bar" ? "active" : ""
+        }
+        to={to}
+      >
         {children}
       </NavLink>
     </li>
