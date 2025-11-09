@@ -1,6 +1,7 @@
 import heroImg from "../assets/HeroImg.jpg";
 import { useLanguageContext } from "../store/LangContext";
 import { Link } from "react-router";
+
 const HomePage = () => {
   const { language } = useLanguageContext();
 
