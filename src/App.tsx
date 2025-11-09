@@ -12,10 +12,12 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import { action } from "./components/Form";
 import LoggedInCtxProvider from "./store/LoggedInContext";
+import Error from "./pages/Error";
 const App = () => {
   const router = createBrowserRouter([
     {
       path: `/`,
+      errorElement: <Error />,
       element: <RootLayout />,
       loader: navLoader,
       children: [
