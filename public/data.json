@@ -19,7 +19,8 @@
                 "content": "For decades, Real Madrid has been synonymous with star power — from Zidane to Ronaldo to Ramos. But the club’s new era is built on something different: youth, patience, and long-term vision. With players like Jude Bellingham, Vinícius Jr., and Eduardo Camavinga leading the charge, Madrid is proving that rebuilding doesn’t mean sacrificing results. The blend of experience from veterans like Luka Modrić and Toni Kroos with the energy of their young stars has created one of the most balanced teams in Europe. Carlo Ancelotti’s calm leadership continues to be the glue holding it all together. His tactical adaptability has ensured that Real Madrid’s DNA — attacking flair and mental strength — remains untouched, even as a new generation takes the stage at the Bernabéu. The message is clear: the future of Los Blancos is already here, and it’s brighter than ever."
               }
             ],
-            "image": "football.jpg"
+            "image": "football.jpg",
+            "alt": "player shooting a football towards the goal."
           },
           {
             "name": "bascketball",
@@ -37,7 +38,8 @@
                 "content": "The 2025 NBA Finals reminded fans of something timeless: talent wins games, but chemistry wins championships. While star players grab the headlines, it’s teamwork and trust that lift the trophy. The champions’ success came from selfless ball movement, defensive rotations, and a shared understanding of each player’s role. Every pass, every screen, every rotation was a product of hours of practice and mutual belief. Basketball may look like a game of individuals, but when five players move as one — reading each other’s minds and anticipating every play — that’s when the sport becomes beautiful. It’s not just about stats, it’s about connection, rhythm, and trust."
               }
             ],
-            "image": "basketball.jpg"
+            "image": "basketball.jpg",
+            "alt": "basketball being dunked in the basket."
           },
           {
             "name": "baseball",
@@ -49,7 +51,8 @@
                 "content": "In an era dominated by home runs and analytics, few expected the classic “small ball” approach to make a comeback. Yet in recent seasons, more teams are rediscovering the power of fundamentals — bunts, steals, and situational hitting — to win tight games. While slugging remains a fan favorite, modern managers have realized that consistent base running and contact hitting can break even the most advanced defensive shifts. The balance between power and precision is reshaping how teams approach the ninth inning. Baseball’s beauty lies in its rhythm — every pitch, every swing, and every decision matters. And as small ball rises again, it reminds us that sometimes, the smartest play isn’t the loudest one, but the one that wins."
               }
             ],
-            "image": "baseball.jpg"
+            "image": "baseball.jpg",
+            "alt": "player striking the base ball with his bat."
           }
         ]
       },
@@ -65,11 +68,13 @@
                 "content": "The Municipality of Athens has announced a new environmental initiative aimed at combating the city’s growing urban heat problem. The project, titled “Green Roofs of Athens,” will introduce rooftop gardens and shaded corridors across key districts, including Exarchia, Neos Kosmos, and Kallithea. According to city officials, the program seeks to lower surface temperatures by up to 3°C in the most densely populated areas. Over 200 buildings are expected to participate in the first phase, which begins in early 2026. “Athens is one of the hottest capitals in Europe during summer,” said Mayor Kostas Bakoyannis. “We want to make the city more livable, sustainable, and beautiful for its residents.” The initiative is part of a broader EU-funded program focused on climate resilience in southern European cities, combining local design, renewable materials, and community participation. Residents have already expressed optimism, seeing this as a small but meaningful step toward a greener and cooler Athens."
               }
             ],
-            "image": "local.jpg"
+            "image": "local.jpg",
+            "alt": "Greek flag waving."
           },
           {
             "name": "regional",
             "image": "regional.jpg",
+            "alt": "EU building, with EU flags wab=ving outside",
             "blogs": [
               {
                 "title": "EU Approves New Digital Green Certificate Standard for Cross-Border Travel",
@@ -82,6 +87,7 @@
           {
             "name": "international",
             "image": "international.jpg",
+            "alt": "UN symbol forged on stone",
             "blogs": [
               {
                 "title": "Global Leaders Agree on Climate Finance Package at UN Summit",
@@ -98,6 +104,7 @@
           {
             "name": "events",
             "image": "events.jpg",
+            "alt": "gamer playing on his PC",
             "blogs": [
               {
                 "title": "Global Gaming Expo 2025 Showcases the Future of Interactive Entertainment",
@@ -110,6 +117,7 @@
           {
             "name": "updates",
             "image": "updates.jpg",
+            "alt": "old printing machine with the word 'UPDATES' printed on its paper.",
             "blogs": [
               {
                 "title": "Weekly Gaming Updates",
@@ -122,6 +130,7 @@
           {
             "name": "community",
             "image": "community.jpg",
+            "alt": "friends playing together at a gamin center.",
             "blogs": [
               {
                 "title": "Gaming Community Grows Around Player-Created Content",
@@ -140,6 +149,7 @@
           {
             "name": "كرة القدم",
             "image": "football.jpg",
+            "alt": "player shooting a football towards the goal.",
             "blogs": [
               {
                 "title": "ليالي آنفيلد: كيف ما زالت روح ليفربول تُشكّل كرة القدم الأوروبية",
@@ -158,6 +168,7 @@
           {
             "name": "كرة السلة",
             "image": "basketball.jpg",
+            "alt": "basketball being dunked in the basket.",
             "blogs": [
               {
                 "title": "صعود الحراس الأوروبيين: المهارة تتفوّق على الحجم",
@@ -176,6 +187,7 @@
           {
             "name": "بايسبول",
             "image": "baseball.jpg",
+            "alt": "basketball being dunked in the basket.",
             "blogs": [
               {
                 "title": "عودة أسلوب اللعب البسيط: كيف تعود الاستراتيجية إلى صدارة لعبة البيسبول الحديثة",
@@ -192,6 +204,7 @@
           {
             "name": "محلي",
             "image": "local.jpg",
+            "alt": "Greek flag waving.",
             "blogs": [
               {
                 "title": "أثينا تطلق مبادرة خضراء جديدة للتخفيف من حرارة المدينة",
@@ -204,6 +217,7 @@
           {
             "name": "اقليمي",
             "image": "regional.jpg",
+            "alt": "EU building, with EU flags wab=ving outside",
             "blogs": [
               {
                 "title": "الاتحاد الأوروبي يوافق على معيار جديد للشهادات الخضراء الرقمية للسفر",
@@ -216,6 +230,7 @@
           {
             "name": "دولي",
             "image": "international.jpg",
+            "alt": "UN symbol forged on stone",
             "blogs": [
               {
                 "title": "توصل القادة العالميون إلى اتفاق على حزمة تمويل المناخ في قمة الأمم المتحدة",
@@ -232,6 +247,7 @@
           {
             "name": "مناسبات",
             "image": "events.jpg",
+            "alt": "gamer playing on his PC",
             "blogs": [
               {
                 "title": "معرض الألعاب العالمي ٢٠٢٥ يعرض مستقبل الترفيه التفاعلي",
@@ -244,6 +260,7 @@
           {
             "name": "تحديثات",
             "image": "updates.jpg",
+            "alt": "old printing machine with the word 'UPDATES' printed on its paper.",
             "blogs": [
               {
                 "title": "تحديثات الألعاب الأسبوعية",
@@ -256,6 +273,7 @@
           {
             "name": "مجتمع",
             "image": "community.jpg",
+            "alt": "friends playing together at a gamin center.",
             "blogs": [
               {
                 "title": "نمو مجتمع الألعاب حول محتوى من صنع اللاعبين",

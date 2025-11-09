@@ -3,9 +3,8 @@
 /* NAVBAR UTILITIES */
 @utility nav-link {
   @apply px-1 sm:px-3 py-0.5 sm:py-1 text-cyan-600 text-[10px] sm:text-xs md:text-base  lg:text-lg rounded-lg
-   hover:bg-cyan-700 hover:text-stone-50 cursor-pointer active:bg-cyan-800;
+  hover:bg-cyan-700 hover:text-stone-50 cursor-pointer active:bg-cyan-800;
 }
-
 @utility active {
   @apply font-bold pb-1 border-b-2 border-b-cyan-600;
 }
@@ -25,45 +24,40 @@
   }
 }
 @media screen and (max-width: 350px) {
-  .nav-link {
-    font-size: 12px;
-  }
   .hamburger {
     font-size: 16px;
   }
 }
-
 @media screen and (max-width: 468px) {
   .about-hero {
     flex-direction: column;
     align-items: center;
   }
 }
+
 /* Auth Utilities */
 
 @utility login-label {
   @apply text-lg sm:text-2xl text-cyan-600 font-bold;
 }
-
 @utility login-input {
-  @apply text-base sm:text-xl bg-stone-200 text-cyan-600 font-semibold border-0 rounded-lg outline-0 px-2 py-0.5;
+  @apply text-base sm:text-xl bg-stone-200 text-cyan-600 font-semibold border-0 rounded-lg outline-0
+  px-2 py-0.5;
 }
-
 @utility auth-form {
   @apply flex flex-col justify-center items-center w-full h-4/5 gap-8;
 }
-
 @utility login-btn {
-  @apply bg-cyan-600 text-[10px] px-3 py-1 cursor-pointer
-text-stone-50 rounded-lg
+  @apply bg-cyan-600 text-[10px] px-3 py-1 cursor-pointer text-stone-50 rounded-lg
   sm:text-xs md:text-sm lg:text-base xl:text-xl
 hover:bg-cyan-700 active:bg-cyan-800;
 }
-
 @utility auth-mode-director {
   @apply italic text-blue-500 hover:underline active:underline active:text-blue-600 cursor-pointer;
 }
-
 @utility auth-header {
   @apply text-cyan-600 text-xl sm:text-4xl font-semibold  italic text-shadow-xs text-shadow-cyan-700;
+}
+@utility auth-error {
+  @apply text-base text-red-500 font-bold;
 }

@@ -4,6 +4,7 @@ import {
   createContext,
   useState,
   useContext,
+  useCallback,
 } from "react";
 
 type CtxProviderProps = {
@@ -22,13 +23,18 @@ export const useLoginContext = () => {
   return ctx;
 };
 const LoggedInCtxProvider: FC<CtxProviderProps> = ({ children }) => {
-  const [loggedIn, setLoggedIn] = useState(false);
-  function LogIn() {
+  const [loggedIn, setLoggedIn] = useState(
+    localStorage.getItem("loggedIn") === "true"
+  );
+  const LogIn = useCallback(() => {
+    localStorage.setItem("loggedIn", "true");
     setLoggedIn(true);
-  }
+  }, []);
   function LogOut() {
+    localStorage.setItem("loggedIn", "false");
     setLoggedIn(false);
   }
+
   const CtxValue = { loggedIn, LogIn, LogOut };
   return (
     <LoggedInCtx.Provider value={CtxValue}>{children}</LoggedInCtx.Provider>
