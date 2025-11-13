@@ -31,7 +31,7 @@ const MyForm: FC<FormProps> = ({ mode }) => {
 
   return (
     <Form
-      data-testId="my-form"
+      data-testid="my-form"
       ref={formRef}
       className="bg-stone-300 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] p-5 rounded-lg flex flex-col items-start gap-6 shadow-stone-400 shadow-lg"
       method="POST"
