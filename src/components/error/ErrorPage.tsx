@@ -4,7 +4,7 @@ const ErrorPage = () => {
   return (
     <>
       <h1 className="text-red-500 text-6xl font-bold">Error</h1>
-      <p data-testId="error-par" className="text-2xl text-white">
+      <p data-testid="error-par" className="text-2xl text-white">
         Dear user, an error occured while loading the page, kindly check the
         following areas before trying again:
       </p>
@@ -15,7 +15,7 @@ const ErrorPage = () => {
         <li className="text-white">Is your internet connection stable?</li>
         <li className="text-white">Is your url valid?</li>
       </ul>
-      <p data-testId="advice-par" className="text-white text-xl font bold">
+      <p data-testid="advice-par" className="text-white text-xl font bold">
         <span className="text-red-500">NOTE: </span>if issues persist, its
         advisable to refresh the page , or revisit the{" "}
         <Link

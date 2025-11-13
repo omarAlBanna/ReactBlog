@@ -25,7 +25,7 @@ const Navbar: FC<NavBarProps> = ({ categories, open }) => {
         <nav className="flex items-center justify-between sm:p-0.5">
           <NavList mode="nav-bar" categories={categories} />
           <button
-            data-testId="open-sideBar"
+            data-testid="open-sideBar"
             onClick={open}
             className="hamburger hidden text-2xl text-cyan-600 px-4"
           >
@@ -33,7 +33,7 @@ const Navbar: FC<NavBarProps> = ({ categories, open }) => {
           </button>
           <div role="div" className="flex items-center justify-between gap-3">
             <button
-              data-testId="langToggle"
+              data-testid="langToggle"
               className="text-cyan-600 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg border rounded-lg cursor-pointer border-cyan-600 px-1 sm:px-3 py-0.5 sm:py-1 hover:bg-cyan-100 active:bg-cyan-200"
               onClick={toggleLang}
             >
@@ -44,7 +44,7 @@ const Navbar: FC<NavBarProps> = ({ categories, open }) => {
 
             {loggedIn ? (
               <button
-                data-testId="logout"
+                data-testid="logout"
                 onClick={LogOut}
                 className="login-btn bg-cyan-600 text-stone-50 rounded-lg hover:bg-cyan-700 px-3 py-1"
               >
@@ -52,7 +52,7 @@ const Navbar: FC<NavBarProps> = ({ categories, open }) => {
               </button>
             ) : (
               <Link
-                data-testId="anchor"
+                data-testid="anchor"
                 to="/login"
                 className="login-btn bg-cyan-600 text-stone-50 rounded-lg hover:bg-cyan-700 px-3 py-1"
               >
