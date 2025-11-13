@@ -1,11 +1,11 @@
 import { type FC, useRef, useEffect } from "react";
-import { useLanguageContext } from "../store/LangContext";
+import { useLanguageContext } from "../../store/LangContext";
 import { useSubmit, useActionData, useNavigate } from "react-router";
 import { Form, type ActionFunctionArgs } from "react-router";
-import { useLoginContext } from "../store/LoggedInContext";
+import { useLoginContext } from "../../store/LoggedInContext";
 
 type FormProps = {
-  mode: "login" | "signup";
+  mode?: "login" | "signup";
 };
 
 const MyForm: FC<FormProps> = ({ mode }) => {
@@ -31,6 +31,7 @@ const MyForm: FC<FormProps> = ({ mode }) => {
 
   return (
     <Form
+      data-testId="my-form"
       ref={formRef}
       className="bg-stone-300 w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] p-5 rounded-lg flex flex-col items-start gap-6 shadow-stone-400 shadow-lg"
       method="POST"
@@ -63,6 +64,7 @@ const MyForm: FC<FormProps> = ({ mode }) => {
       </div>
       {actionData?.error && <p className="auth-error">{actionData.error}</p>}
       <button
+        data-testId="loginBtn"
         onClick={handleLogin}
         className={`login-btn ${
           language === "EN" ? "mr-auto" : "ml-auto"
