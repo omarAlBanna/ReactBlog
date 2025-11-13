@@ -1,10 +1,11 @@
-import heroImg from "../assets/HeroImg.jpg";
-import { useLanguageContext } from "../store/LangContext";
+import heroImg from "../../assets/HeroImg.jpg";
+import { useLanguageContext } from "../../store/LangContext";
+import { useLoginContext } from "../../store/LoggedInContext";
 import { Link } from "react-router";
 
 const HomePage = () => {
   const { language } = useLanguageContext();
-
+  const { loggedIn } = useLoginContext();
   const textSize = language === "EN" ? "text-3xl" : "text-[42px]";
   return (
     <section className="w-full h-full flex flex-col items-center justify-center ">
@@ -31,12 +32,14 @@ const HomePage = () => {
         >
           {language === "EN" ? "Learn more" : "معلومات اضافية"}
         </Link>
-        <Link
-          to={"/signup"}
-          className="bg-cyan-600 cursor-pointer hover:bg-cyan-700 active:bg-cyan-800 border-2 border-cyan-600 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg  text-white"
-        >
-          {language === "EN" ? "Get started now" : "ابدأ الان"}
-        </Link>
+        {loggedIn ? null : (
+          <Link
+            to={"/signup"}
+            className="bg-cyan-600 cursor-pointer hover:bg-cyan-700 active:bg-cyan-800 border-2 border-cyan-600 text-base md:text-2xl font-bold px-2 md:px-4 py-1 md:py-2 rounded-lg  text-white"
+          >
+            {language === "EN" ? "Get started now" : "ابدأ الان"}
+          </Link>
+        )}
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ import CategoryLayout, {
 } from "./pages/CategoryLayout";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import { action } from "./components/Form";
+import { action } from "./components/form/Form";
 import LoggedInCtxProvider from "./store/LoggedInContext";
 import Error from "./pages/Error";
 

@@ -1,5 +1,5 @@
 import { type FC } from "react";
-import { useLanguageContext } from "../store/LangContext";
+import { useLanguageContext } from "../../store/LangContext";
 type BlogPostProps = {
   blog: { title: string; author: string; date: string; content: string };
 };

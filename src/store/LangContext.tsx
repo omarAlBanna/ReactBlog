@@ -24,7 +24,7 @@ export function useLanguageContext() {
 type ProviderProps = {
   children: ReactNode;
 };
-type LangContextValue = {
+export type LangContextValue = {
   language: "EN" | "AR";
   toggleLang: () => void;
   loading: boolean;

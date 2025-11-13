@@ -1,6 +1,6 @@
 import { Outlet, useLoaderData } from "react-router";
 import Navbar from "../components/NavBar/Navbar";
-import SideBar from "../components/SideBar";
+import SideBar from "../components/SideBar/SideBar";
 import { useState } from "react";
 const RootLayout = () => {
   const data = useLoaderData();

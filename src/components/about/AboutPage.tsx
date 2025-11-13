@@ -1,9 +1,11 @@
 import { Link } from "react-router";
-import { useLanguageContext } from "../store/LangContext";
-import aboutImg from "../assets/AboutImg.jpg";
+import { useLanguageContext } from "../../store/LangContext";
+import aboutImg from "../../assets/AboutImg.jpg";
 import { FaArrowRightToBracket } from "react-icons/fa6";
+import { useLoginContext } from "../../store/LoggedInContext";
 const AboutPage = () => {
   const { language } = useLanguageContext();
+  const { loggedIn } = useLoginContext();
   const languageText =
     language === "EN"
       ? "text-[10px] sm:text-[12px] lg:text-[14px] xl:text-[18px]"
@@ -39,15 +41,17 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="md:mt-10">
-        <Link
-          className=" italic  flex gap-2 items-center min-h-[50px]  font-bold text-xl sm:text-2xl text-cyan-600 hover:underline active:text-cyan-700  "
-          to={"/signup"}
-        >
-          {language === "EN" ? "Get started" : "ابدأ الان"}
-          <FaArrowRightToBracket />
-        </Link>
-      </div>
+      {loggedIn ? null : (
+        <div className="md:mt-10">
+          <Link
+            className=" italic  flex gap-2 items-center min-h-[50px]  font-bold text-xl sm:text-2xl text-cyan-600 hover:underline active:text-cyan-700  "
+            to={"/signup"}
+          >
+            {language === "EN" ? "Get started" : "ابدأ الان"}
+            <FaArrowRightToBracket />
+          </Link>
+        </div>
+      )}
     </main>
   );
 };
