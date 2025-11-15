@@ -27,19 +27,16 @@ type ProviderProps = {
 export type LangContextValue = {
   language: "EN" | "AR";
   toggleLang: () => void;
-  loading: boolean;
 };
 
 const LangContextProvider: FC<ProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<"EN" | "AR">("EN");
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const savedLang = localStorage.getItem("language") as "EN" | "AR" | null;
     if (savedLang) {
       setLanguage(savedLang);
     }
-    setLoading(false);
   }, []);
 
   const toggleLang = () => {
@@ -53,7 +50,6 @@ const LangContextProvider: FC<ProviderProps> = ({ children }) => {
   const contextValue: LangContextValue = {
     language: language,
     toggleLang,
-    loading,
   };
 
   return (

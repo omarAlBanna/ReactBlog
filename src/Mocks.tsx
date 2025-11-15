@@ -131,7 +131,6 @@ export const dataMock = {
 export const LangCtxMock = {
   language: "EN",
   toggleLang: vi.fn(),
-  loading: false,
 };
 export const LoginCtxMock = {
   loggedIn: false,

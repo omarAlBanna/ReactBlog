@@ -1,7 +1,5 @@
 import BlogPost from "../BlogPost/BlogPost";
-import { useRouteLoaderData } from "react-router";
-import { useLanguageContext } from "../../store/LangContext";
-import { useParams } from "react-router";
+import useValidateSubCategories from "../../hooks/useValidateSubCategories";
 
 type Blog = {
   title: string;
@@ -10,19 +8,20 @@ type Blog = {
   content: string;
 };
 const SubCategoriesPage = () => {
-  const data = useRouteLoaderData("categoryLayout");
-  const { language } = useLanguageContext();
-  const params = useParams();
-  const subs = data.categories[language]?.[params.category!]["sub-categories"];
-  const currSub = subs.filter(
-    (sub: { name: string; blogs: Blog[] }) => sub.name === params.sub
-  );
+  const { subCategories, sub: dataSub } = useValidateSubCategories();
+
+  const currSub =
+    subCategories &&
+    subCategories.filter(
+      (sub: { name: string; blogs: Blog[] }) => sub.name === (dataSub as string)
+    );
 
   return (
     <div className="my-20 flex lg:flex-row flex-col w-4/5 gap-5 sm:gap-10 mx-auto">
-      {currSub[0].blogs.map((blog: Blog) => {
-        return <BlogPost key={blog.title} blog={blog} />;
-      })}
+      {currSub &&
+        currSub[0].blogs.map((blog: Blog) => {
+          return <BlogPost key={blog.title} blog={blog} />;
+        })}
     </div>
   );
 };

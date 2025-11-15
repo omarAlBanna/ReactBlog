@@ -5,20 +5,29 @@ import * as langCtx from "../../store/LangContext";
 import type { LangContextValue } from "../../store/LangContext";
 import { dataMock, LangCtxMock } from "../../Mocks";
 
-vi.spyOn(reactRouter, "useLoaderData").mockReturnValue(dataMock);
 vi.spyOn(langCtx, "useLanguageContext").mockReturnValue(
   LangCtxMock as LangContextValue
 );
-vi.spyOn(reactRouter, "useParams").mockReturnValue({ category: "sports" });
+vi.spyOn(reactRouter, "useRouteLoaderData").mockReturnValue(dataMock);
+vi.spyOn(reactRouter, "useParams").mockReturnValue({
+  category: "sports",
+  sub: "football",
+});
+const loaderData = dataMock;
+const router = reactRouter.createMemoryRouter(
+  [
+    {
+      path: "/:category",
+      element: <SubNav />,
+      loader: () => loaderData,
+    },
+  ],
+  { initialEntries: ["/:category"] }
+);
+
 describe("sub categories navbar", () => {
-  beforeEach(() => {
-    render(
-      <reactRouter.MemoryRouter>
-        <SubNav />
-      </reactRouter.MemoryRouter>
-    );
-  });
   test("renders header, nav, and Ul elements", () => {
+    render(<reactRouter.RouterProvider router={router} />);
     const header = screen.getByRole("banner");
     expect(header).toBeInTheDocument();
 

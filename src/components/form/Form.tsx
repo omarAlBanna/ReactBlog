@@ -64,7 +64,7 @@ const MyForm: FC<FormProps> = ({ mode }) => {
       </div>
       {actionData?.error && <p className="auth-error">{actionData.error}</p>}
       <button
-        data-testId="loginBtn"
+        data-testid="loginBtn"
         onClick={handleLogin}
         className={`login-btn ${
           language === "EN" ? "mr-auto" : "ml-auto"

@@ -82,3 +82,9 @@ hover:bg-cyan-700 active:bg-cyan-800;
 @utility auth-error {
   @apply text-base text-red-500 font-bold;
 }
+
+/* Loading Utilty */
+
+@utility loading {
+  @apply text-cyan-800  italic font-medium flex w-full h-full items-center justify-center;
+}
